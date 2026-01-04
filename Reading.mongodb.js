@@ -11,6 +11,7 @@ use("ecommerce");
 // db.products.find({ price: { $gte: 1000, $lte: 50000 } })
 
 // db.products.find({}, { name: 1, _id: 0})
+// db.products.find({}, { name: 1, _id: 0})
 
 db.products.find().sort({ price: -1 }).limit(1)
 
